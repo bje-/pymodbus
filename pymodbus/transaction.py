@@ -78,7 +78,7 @@ class ModbusTransactionManager(object):
         '''
         retries = self.retries
         request.transaction_id = self.getNextTID()
-        _logger.debug("Running transaction %d" % request.transaction_id)
+        _logger.debug("running transaction %d" % request.transaction_id)
 
         expected_response_length = None
         if hasattr(request, "get_response_pdu_size"):
